@@ -1,0 +1,38 @@
+﻿@model Vestiging
+
+<form method="post">
+    <div class="border-bottom p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Voeg vestiging toe</h2>
+            <hr />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Naam"></label>
+            <input asp-for="Naam" class="form-control" />
+            <span asp-validation-for="Naam" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Adres"></label>
+            <input asp-for="Adres" class="form-control" />
+            <span asp-validation-for="Adres" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Plaats"></label>
+            <input asp-for="Plaats" class="form-control" />
+            <span asp-validation-for="Plaats" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="TelefoonNummer"></label>
+            <input asp-for="TelefoonNummer" class="form-control" />
+            <span asp-validation-for="TelefoonNummer" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:150px">Voeg toe</button>
+        <a asp-controller="Vestiging" asp-action="Index" class="btn btn-secondary" style="width:150px">Terug naar lijst</a>
+    </div>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}

@@ -1,0 +1,35 @@
+﻿@model Vestiging
+
+<form method="post" asp-action="Delete" >
+    <input asp-for="VestigingsNummer" hidden />
+    <div class="border-bottom p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Wis vestiging</h2>
+            <hr />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Naam"></label>
+            <input asp-for="Naam" disabled class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Adres"></label>
+            <input asp-for="Adres" disabled class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="Plaats"></label>
+            <input asp-for="Plaats" disabled class="form-control" />
+        </div>
+        <div class="mb-3">
+            <label asp-for="TelefoonNummer"></label>
+            <input asp-for="TelefoonNummer" disabled class="form-control" />
+        </div>
+        <button type="submit" class="btn btn-danger" style="width:150px">Wissen</button>
+        <a asp-controller="Vestiging" asp-action="Index" class="btn btn-secondary" style="width:150px">Terug naar lijst</a>
+    </div>
+</form>
+
+@section Scripts{
+    @{
+        <partial name="_ValidationScriptsPartial" />
+    }
+}
