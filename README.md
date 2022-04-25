@@ -1,2 +1,6 @@
 # Bouwmarkt
-An ASP.NET (C#) Web Application built using Entity Framework based on Code-first / Database-first using MS SQL database. With this I set up the foundation of the application using the CRUD principle where you can add / edit and remove shops. Unfortunately I was not able to implement the real functionality of the progam in time which was about the management of shopping Sundays.
+My first assignment. The assignment was to built a ASP.NET (C#) Web Application management system for a hardware store to keep track of shopping Sundays.
+
+Using Entity Framework based on Code-first / Database-first using MS SQL database I set up the foundation to communicate with the database using CRUD operations for adding / editing and removing shops.
+
+The code works, but is not complete. Later on I rewrote the code (see: Bouwmarkt API) to match the original assignment (no frontend implementation / testable with Swagger).
