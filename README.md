@@ -1,5 +1,5 @@
 # Bouwmarkt
-My first 'real life' assignment. The assignment was to built a ASP.NET (C#) Web Application management system for a hardware store to keep track of shopping Sundays.
+My first 'real' assignment. The assignment was to built a ASP.NET (C#) Web Application management system for a hardware store to keep track of shopping Sundays.
 
 Using Entity Framework based on Code-first / Database-first using MS SQL database I set up the foundation to communicate with the database using CRUD operations for adding / editing and removing shops.
 
